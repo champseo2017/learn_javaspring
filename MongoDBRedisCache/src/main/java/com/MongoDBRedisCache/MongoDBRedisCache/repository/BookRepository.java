@@ -2,7 +2,9 @@ package com.MongoDBRedisCache.MongoDBRedisCache.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import com.MongoDBRedisCache.MongoDBRedisCache.model.Book;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface BookRepository extends MongoRepository<Book, String> {
     Book findByTitle(String title); // ค้นหาหนังสือตามชื่อ
 
