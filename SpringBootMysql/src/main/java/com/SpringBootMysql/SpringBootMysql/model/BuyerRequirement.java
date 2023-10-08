@@ -15,18 +15,18 @@ public class BuyerRequirement {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "PRODUCT_NAME", nullable = false)
+    @Column(name = "product_name", nullable = false)
     private String productName;
 
-    @Column(name = "NAME", nullable = false)
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "MOBILE", nullable = false)
+    @Column(name = "mobile", nullable = false)
     private String mobile;
 
-    @Column(name = "EMAIL", nullable = false)
+    @Column(name = "email", nullable = false)
     private String email;
 
-    @Column(name = "CITY")
+    @Column(name = "city")
     private String city;
 }
